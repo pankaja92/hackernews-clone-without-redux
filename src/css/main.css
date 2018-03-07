@@ -13,17 +13,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* TextField[type=search] {
-    color: red;
-    text-align: right;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    letter-spacing: 4px;
-    text-shadow: 0 0 2px black;
-    word-spacing: 20px;
-} */
 
 .Main-div {
-    width : 50%;
+    width :50%;
+    margin: 0 auto;
+}
+
+form {
+    width: 80%;
 }

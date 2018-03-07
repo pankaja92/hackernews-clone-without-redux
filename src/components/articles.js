@@ -20,7 +20,7 @@ class Articles extends Component{
     }
 
     render(){
-        const Article_list = () => {
+        const ArticleList = () => {
             if(this.state.articleList){
                 return (
                     <Paper zDepth={2} style={style}>
@@ -46,7 +46,7 @@ class Articles extends Component{
 
         return(
             <div className='Articles'>
-               <Article_list />
+               <ArticleList />
             </div>
         )
     }
