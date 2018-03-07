@@ -1,0 +1,29 @@
+
+.Menu {
+    display : flex;
+    font-size: 22px;
+}
+
+.Menu > div {
+    padding: 15px;
+}
+
+.Articles {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* TextField[type=search] {
+    color: red;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    letter-spacing: 4px;
+    text-shadow: 0 0 2px black;
+    word-spacing: 20px;
+} */
+
+.Main-div {
+    width : 50%;
+}
