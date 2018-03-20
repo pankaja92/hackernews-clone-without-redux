@@ -17,12 +17,10 @@ class Menu extends Component {
     }
 
     getList(articles){
-        console.log('This is called');
         this.setState({ articles });
     }
 
     getValue(search){
-        console.log(search);
         this.setState({ search });
     }
 

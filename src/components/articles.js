@@ -16,7 +16,7 @@ class Articles extends Component{
     }
 
     componentWillReceiveProps({ articleList}){
-        this.setState({ articleList }, () => console.log(this.state.articleList));
+        this.setState({ articleList });
     }
 
     render(){
@@ -26,10 +26,12 @@ class Articles extends Component{
                     <Paper zDepth={2} style={style}>
                         <List>
                             {this.state.articleList.map(article => (
-                                <span key={article.objectID} >
+                                <a href={article.url} key={article.objectID} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none'}}>
+                                <span>
                                     <ListItem > {article.title} </ListItem>
                                     <Divider />
                                 </span>
+                                </a>
                             ))}
                         </List>
                     </Paper>

@@ -49,7 +49,6 @@ class Menubar extends Component {
         }
         var url = `https://hn.algolia.com/api/v1/search${sort}?tags=`;
         var callAPI = `${url}${this.state.show}&query=${this.state.search}`;
-        console.log(callAPI);
         fetch(callAPI)
         .then(res => res.json())
         .then(data => {
@@ -61,21 +60,17 @@ class Menubar extends Component {
         this.setState({ value });
         switch (value) {
             case 1:
-                console.log(`Story selected`);
                 this.setState({ show: 'story' }, () => this.fetchdata());
                 break;
             case 2:
-                console.log(`Front Page selected`);
                 this.setState({ show: 'front_page' }, () => this.fetchdata());
                 break;
             case 3:
-                console.log(`JOBS seleceted`);
                 this.setState({ show: 'job' }, () => this.fetchdata());
                 break;
             default:
                 break;
         }
-        console.log(e.target.textContent);
     }
 
     toggleChange(e){

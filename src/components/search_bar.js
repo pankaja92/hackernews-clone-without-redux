@@ -12,7 +12,8 @@ class Searchbar extends Component {
         return(
             <div style={{
                 margin: '0 auto',
-                maxWidth: '100%'
+                maxWidth: '100%',
+                paddingTop : '20px'
             }}>
                 <form style={{ align: 'center' }}>
                     <SearchBar
